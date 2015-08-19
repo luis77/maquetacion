@@ -1,0 +1,470 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+ /*con movile first especificamos primero los dispositivos moviles y luego los mayores especifica como cambia el aspecto en resoluciones mas grandes*/
+/*CON CONTROL F9 PODEMOS ORDENAR ALFABETICAMENTE LO SELECCIONADO*/
+body{
+	font-family: 'Gochi Hand', cursive;
+	font-size: 16px;
+}
+
+
+footer{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 0.8em;
+	margin-top: 2px;
+	color: #f7f7f7;
+
+	/*pagina para colores degradadoswww.colorzilla.com/gradient-editor/*/
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0b7a1+0,822d09+58 */
+background: #f0b7a1; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjBiN2ExIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTglIiBzdG9wLWNvbG9yPSIjODIyZDA5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(45deg,  #f0b7a1 0%, #822d09 58%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#f0b7a1), color-stop(58%,#822d09)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg,  #f0b7a1 0%,#822d09 58%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg,  #f0b7a1 0%,#822d09 58%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg,  #f0b7a1 0%,#822d09 58%); /* IE10+ */
+background: linear-gradient(45deg,  #f0b7a1 0%,#822d09 58%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#822d09',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+}
+footer span:after{
+	content: " -";
+}
+
+footer span:before{
+	content: "- ";
+}
+
+header{
+	background-color:#604214; 
+	text-align: right;
+}
+header figure{
+	float: left;
+	margin-left: 100px;
+}
+header figure img{
+	width: 60px;
+	height: 60px;
+	border-radius:10px; /*recorta la imagen*/
+}
+header h1{
+	color:#47bf4b;
+	float:left;
+	font-size: 1.6em;
+	display: block;
+	margin: 7px 80px 0px 50px;/*arriba, derecha, abajo, izquierda*/
+	padding: 0px;/*margen interno para los elementos que estan por dentro*/
+}
+header nav ul{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	list-style: none;
+}
+header nav ul li{
+	height: 35px;
+	margin-top: 10px;
+	width: 100%;
+	display: inline-block;
+}
+header nav ul li a{
+	text-decoration: none;
+	font-weight: bold;
+	padding: 15px 25px; /*sucede igual que el margin, en sentido de las agujas*/
+}
+
+section article.receta{
+	border-width: 2px;
+	border-style: solid; /*es toda una linea continua*/
+	display: inline-block; 
+	vertical-align: top; /*para que se el objeto se alinee con otro objeto, en este caso, pasa con todos los articulos, se alineen todos desde arriba. puede alinearse top, middle, bottom, etc*/
+	position: relative;
+	border-radius: 0px 0px 15px 15px;/*bordes personalizados, al igual q en las agujas del reloj*/
+	margin: 50px 0px 20px 10%;/*el margen derecho es con porcentake para que pueda adaptarse a la pantalla*/
+	width: 85%;/*el ancho es de 85% para que se vaya adaptando junto con el margen de 10% y solo quede un 5% restante a la derecha*/
+	font-size: 1.2em;
+
+	box-shadow: 0px 0px 10px #f7f7f7;
+}
+html {/*con este codigo, nuestro fondo se adaptara a cualquier pantalla, a excepcion de los usuarios que usen internet explorer menor a 9*/
+    	background:url(../assets/fondo.jpg) no-repeat fixed center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*
+section{
+	background:url(../assets/fondo.jpg);fondo de pantalla, los dos puntos y la barra (../) es para retroceder un directorio, y entrar en otro
+	background-repeat: no-repeat;en tal caso de que la imagen de fondo sea muy pequeña, esta se repetira en toda la pantalla, este atributo no-repeat evita dicho evento 
+
+	background-repeat: repeat-y;
+	background-repeat: repeat-x; para que la imagen se repita en el eje que queramos 
+	 
+}*/
+section{
+	margin-top:55px;/*para que se separe de arriba*/
+}
+section article.receta figure{
+	float:left;/*para que flote y todos los elementos que esten al lado, vayan acomodandose al el*/
+	margin-top: -50px;/*para que sobresalga*/
+	margin-left: -30px;
+}
+section article.receta figure img {
+	border-radius: 50%;
+	border-width:5px;
+	border-style: solid;
+	width: 180px;
+	height: 140px;
+
+	transition-duration: 1s;/*trabaja junto con el hover para aumentar o disminuir la imagen con una duracion*/
+}
+section article.receta figure img:hover{/*hover sirve para hacer animaciones con css*/
+	cursor: pointer;/*cambia el cursos*/
+	/*opacity: 0.8;transparenta la imagen*/
+	transform: scale(1.5); /*aumenta la imagen*/
+	/*transform: scale(0.6); disminuye la imagen*/
+	/*transform:rotate(15deg); gira la imagen*/
+	/*transform:rotate(-15deg); gira la imagen al otro lado*/
+	/*transform:rotate(360deg); gira totalmente la imagen*/
+	/*transform:skew(30deg); gira la imagen*/
+
+/*para que todas las transformaciones se vean en todos los navegadores, utilizar prefijos
+http://caniuse.com
+ejemplo:
+-webkit-transformation:scale (1.5);
+-webkit-transformation-duration: 0.5s;
+
+-moz- firefox
+-ms- iexplorer
+-o- opera
+-webkit- chrome android
+
+*/
+}
+section article.receta div{
+	width: 90%;
+	margin: 30px 4% 10px 5%;
+	border-width: 2px;
+	border-style: solid;
+	position: relative;
+	padding-top: 20px; 
+	font-size: 0.9em;
+	border-radius: 15px;
+}
+section article.receta div span{
+	position: absolute;
+	top: -15px;
+	left: 10px;
+	line-height: 20px;/*para que se quede alineado verticalmente*/
+	border-radius: 15px;
+	text-decoration: underline;/*subrayado*/
+	background-color: white;
+	padding: 3px 10px;
+}
+section article.receta div ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+section article.receta div ul li{
+	font-weight: bolder;
+	vertical-align: middle;/*para que se vayan alineando todos al medio*/
+	display: inline-block;
+	margin: 5px 3%;
+	width: 26%;
+}
+section article.receta h2{
+	padding: 0px;
+	text-align: right;
+	margin: 15px 20px 0px 165px;/*ya que tengo una imagen con un ancho de de 180 px y que ademas esta adentrado a -30, ose q solo esta en 150 px, le dare un margen izquierdo de 165 para que quede una diferencia de 15*/
+	font-size: 1.2em; 
+}
+section article.receta h2:hover{
+	font-style: italic;
+	color:white;
+	cursor: pointer;
+}
+section article.receta p{
+	font-size: 0.8em;
+	text-align: justify;/*justificado*/
+	margin: 15px 10px 5px 30px;
+}
+section article.receta span.tipo {
+	color: #f7f7f7;
+	border-radius: 15px 15px 0px 0px;
+	border-style: solid;
+	border-width: 2px;
+	font-weight:bolder; /*negrita*/
+	height: 30px;/*altura*/
+	line-height: 30px;/*para que a pesar de colocarle el height, podamos darle la posicion que queramos dentro del height*/
+	padding: 2px 10px;
+	position: absolute;
+	right: -2px; /*como tiene un margen, en vez de 0 se coloca -2*/
+	top: -38px;
+}
+
+/*********************COLORES DESAYUNO************/
+section article.desayuno, /*SE UTILIZA COMA Y ESPACIO, SEGUDO DE LOS DEMAS ELEMENTOS QUE SE DESEEN Q TENGAN EL MISMO ESTILO*/
+section article.desayuno figure img,
+section article.desayuno div, 
+section article.desayuno span.tipo{
+	border-color: #082E08;
+} 
+
+section article.desayuno h2{
+	color: #154419;
+} 
+
+section article.desayuno span.tipo,
+section article.desayuno div,
+section article.desayuno div span{
+	background-color: #154419
+}
+section article.desayuno p{
+	color: #3E7242;
+}
+section article.desayuno{
+	background-color: #C0EE90;
+}
+section article.desayuno div span,
+section article.desayuno div ul li{
+color: #9CD95C;
+}
+/*********************COLORE POSTRE************/
+section article.postre, /*SE UTILIZA COMA Y ESPACIO, SEGUDO DE LOS DEMAS ELEMENTOS QUE SE DESEEN Q TENGAN EL MISMO ESTILO*/
+section article.postre figure img,
+section article.postre div, 
+section article.postre span.tipo{
+	border-color: #1B0C02;
+} 
+
+section article.postre h2{
+	color: #5A3107;
+} 
+
+section article.postre span.tipo,
+section article.postre div,
+section article.postre div span{
+	background-color: #5A3107
+}
+section article.postre p{
+	color: #97521E;
+}
+section article.postre{
+	background-color: #B29178;
+}
+section article.postre div span,
+section article.postre div ul li{
+color: #F5CBA2;
+}
+
+/*********************COLORE ALMUERZO************/
+section article.almuerzo, /*SE UTILIZA COMA Y ESPACIO, SEGUDO DE LOS DEMAS ELEMENTOS QUE SE DESEEN Q TENGAN EL MISMO ESTILO*/
+section article.almuerzo figure img,
+section article.almuerzo div, 
+section article.almuerzo span.tipo{
+	border-color: #020F2B;
+} 
+
+section article.almuerzo h2{
+	color: #08215B;
+}
+
+section article.almuerzo span.tipo,
+section article.almuerzo div,
+section article.almuerzo div span{
+	background-color: #08215B;
+}
+section article.almuerzo p{
+	color: #335093;
+}
+section article.almuerzo{
+	background-color: #9EA3FF;
+}
+section article.almuerzo div span,
+section article.almuerzo div ul li{
+color: #434BDD;
+}
+
+/*********************COLORE CENA************/
+section article.cena, /*SE UTILIZA COMA Y ESPACIO, SEGUDO DE LOS DEMAS ELEMENTOS QUE SE DESEEN Q TENGAN EL MISMO ESTILO*/
+section article.cena figure img,
+section article.cena div, 
+section article.cena span.tipo{
+	border-color: #082E08;
+} 
+
+section article.cena h2{
+	color: #154419;
+} 
+
+section article.cena span.tipo,
+section article.cena div,
+section article.cena div span{
+	background-color: #154419
+}
+section article.cena p{
+	color: #3E7242;
+}
+section article.cena{
+	background-color: #C0EE90;
+}
+section article.cena div span,
+section article.cena div ul li{
+color: #9CD95C;
+}
+/*********************COLORES DESAYUNO2************/
+
+section article.desayuno2 span.tipo,
+section article.desayuno2 div span{
+	background-color: rgba(220,220,220,0.69);/*para aplicar transparencia en los colores se utiliza el rgba, basandose en 0.69 que es el nivel de transparencia. o sin ninguna utilizando rgb*/
+	
+}
+
+section article.desayuno2{
+	background-color: rgba(220,220,220,0.69);/*para aplicar transparencia en los colores se utiliza el rgba, basandose en 0.69 que es el nivel de transparencia. o sin ninguna utilizando rgb*/
+
+}
+
+section div.news{
+	width: 30%;
+	background-color: white;
+	border:1px solid black;
+	border-radius: 10px;
+	margin-right: 20px;
+	float: right;/*para que flote a la derecha*/ 
+	padding-bottom: 20px; 
+	display: none;/*para que no se vea por defecto, osea en pantalla pequeña */
+}
+
+section div.news article.post{
+	width: 95%;
+	margin-left: 2%;/*el otro tendra un 3% restante*/
+	margin-top: 25px;
+	border-top: 2px solid #440a4e;/*linea separadora*/ 
+}
+section div.news h2{
+	text-align: center;	
+}
+section div.news h3{
+	margin-left: 85px;	
+}
+section div.news figure{
+	float: left;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+section div.news figure img{
+	width: 70px;/*cuando se especifica solo la anchura, la altura se hace proporsional*/
+}
+section div.news p{
+	font-style: italic;/*cursiva*/
+	font-size: 0.8em;
+	text-align: justify;
+	margin: 5px 5% 20px 5%; 
+}
+section div.news video{
+	width: 90%;
+	margin: 0px 5%;
+}
+/* para hacer sombras de objetos
+div.sombra{
+	height: 40px;
+	width: 40px;
+	margin: 40px;
+	border: 1px solid red;
+
+	box-shadow: 3px 5px 1px green;4 parametros, como se desplazara la sombra en el eje horizontal, la cantidad de desplazamiento en el eje vertical, cuantos pixeles queremos que se difumine la sombra y luego el color
+				-8px -10px 1px blue  para colocar una segunda sombra solo se debe de colocar una coma en vez del punto y coma y continuar
+}*/
+
+
+
+@media screen and (min-width: 480px){/* cuando la anchura minima sea de 489 pixeles, va a cambiar el dispositivo*/
+	header nav ul li{/*cuando este en un tamaño mas grande, van tener de ancho un 22%*/
+		width: 22%
+	}
+}
+
+@media screen and (min-width: 767px){
+	header nav ul li{
+	width: 8%;
+	}
+	div#contenedor{
+		display: inline;
+	}
+	section article.receta{
+		width: 40%;
+		margin: 50px 3% 20px 6%;/*para que podamos tener dos articulos aliniados en esta resolucion, cada uno tendra un 49% de magen, que es el 40% establecido  de ancho mas el de la izquierda y derecha, no debe de llegar a exactamene 50 ya que los bordes le dan mas grosor*/
+	}
+}
+
+@media screen and (min-width: 950px){
+	
+	section article.receta{
+			width: 26%;
+			margin: 50px 1% 20px 5%;/*SI QUEREMOS QUE FUESEN 3 CULUMNAS SUMAMOS EN TOTAL UN 32%*/
+		}
+		section div.news{
+		display: inline;/*muestra la seccion de noticias en pantallas mas grandes*/
+	}
+}
+/*
+section article{
+	background-color: yellow;
+	height: 170px;
+	width: 170px;
+	border: 1px solid red;
+	
+	display: inline-block;para que esten en linea, uno al lado del otro. en block es lo contrario
+	margin:10px 2px;/*arriba y abajo tendran 10 e izquierda a derecha 2
+	/*margin-bottom: 10px;/*margen inferior
+	tambien puede ser asi, en sentido de las agujas del reloj margin: 30px 2px 10px 3px;
+	position: relative;/*padre del section article
+}
+section article p{
+	border: 1px solid blue;
+	position: absolute;/*para ubicarlo donde queramos se va adaptar al relative de section article 
+	padding-top: 20px; 
+	padding-left: 10px;
+} */
+
+
+
+
+
+
+
+/*
+div.caja{
+	width: 300px;	
+	height: 300px;
+	border: 1px solid red;
+	position: relative;
+}
+
+div.caja div.color{ 
+	background-color: rgba(183,183,193,0.69);para aplicar transparencia en los colores se utiliza el rgba, basandose en 0.69 que es el nivel de transparencia. o sin ninguna utilizando rgb
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	position: absolute;
+	top: 0px;
+}*/

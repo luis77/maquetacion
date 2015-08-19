@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!--es para que la pagina se adapte, quiere decir que El ancho que presente, sea igual al del dispositivo, que la escala inicial que comienze a verse sea de 1 y la maxima sea tambien 1 para que no se haga zoom-->
+  <title>Curso HTML5 y CSS3</title>
+  <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <link rel="shortcut icon" href="assets/Husky.jpg" type="image/x-icon"><!--colocar un icono de pagina en la pestaña-->
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
